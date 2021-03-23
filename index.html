@@ -1,0 +1,498 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Audio Samples</title>
+      
+   </head>
+   <h1 align="center">Continual Speaker Adapation for Text-to-Speech Synthesis</h1>
+   <hr>
+
+   <div style="color: red;"><strong> * All audio files are reconstructed with the same vocoder (even the dataset samples)</strong></div>
+   <div>
+      <a name="baseline_limit">
+         <h2 style="color: black;">Comparison of Different Methods</h2>
+      </a>
+   </div>
+   
+   <div style="color: blue;"><strong>The results from all episode-based methods are synthesized in the last episode of the model trained on one of the random speaker sequences.</strong></div>
+   <!--
+      -------------------- ENGLISH
+   -->
+   <h3>-> VCTK</h2> 
+   <div></div>
+
+   <br>
+   <table  border="0">
+      <tr>
+         <td align="center">Method</td>
+         <td align="center">Random Previous Speaker (p226)</td>
+         <td align="center">Random Previous Speaker (p316)</td>
+         <td align="center">Random Previous Speaker (p284)</td>
+       </tr>
+       
+      <tr>
+          <td align="center">Dataset Sample</td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/Comparison-Methods/VCTK/GT/GT_p226.wav" type="audio/wav">
+             </audio>
+          </td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/Comparison-Methods/VCTK/GT/GT_p316.wav" type="audio/mp3">
+             </audio>
+          </td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/Comparison-Methods/VCTK/GT/GT_p284.wav" type="audio/mp3">
+             </audio>
+          </td>
+      </tr>
+        
+      <tr>
+         <td align="center">JT (Upper Bound)</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/JT/JT_p226.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/JT/JT_p316.wav" type="audio/mp3">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/JT/JT_p284.wav" type="audio/mp3">
+            </audio>
+         </td>
+      </tr>
+
+      <tr>
+         <td align="center">SA</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/SA/SA_p226.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/SA/SA_p316.wav" type="audio/mp3">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/SA/SA_p284.wav" type="audio/mp3">
+            </audio>
+         </td>
+       </tr>
+      
+       <tr>
+         <td align="center">EWC</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/EWC/EWC_p226.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/EWC/EWC_p316.wav" type="audio/mp3">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/EWC/EWC_p284.wav" type="audio/mp3">
+            </audio>
+         </td>
+       </tr>
+
+       <tr>
+         <td align="center">ER (BS:10)</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/ER/ER_p226.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/ER/ER_p316.wav" type="audio/mp3">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/ER/ER_p284.wav" type="audio/mp3">
+            </audio>
+         </td>
+       </tr>
+       
+       <tr>
+         <td align="center">ER-KD (BS:10)</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/ER-KD/ERKD_p226.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/ER-KD/ERKD_p316.wav" type="audio/mp3">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/Comparison-Methods/VCTK/ER-KD/ERKD_p284.wav" type="audio/mp3">
+            </audio>
+         </td>
+       </tr>
+
+   </table>
+
+
+
+   <!--
+      -------------------- GERMAN
+   -->
+   <h3>-> CVDE</h2> 
+      <div></div>
+   
+      <br>
+      <table  border="0">
+         <tr>
+            <td align="center">Method</td>
+            <td align="center">Random Previous Speaker (13)</td>
+            <td align="center">Random Previous Speaker (51) <br><strong>*the only female speaker in the dataset*</strong></td>
+            <td align="center">Random Previous Speaker (19)</td>
+          </tr>
+          
+         <tr>
+             <td align="center">Dataset Sample</td>
+             <td align="center">
+               <audio controls="">
+                   <source src="files/Comparison-Methods/CVDE/GT/GT_13.wav" type="audio/wav">
+                </audio>
+             </td>
+             <td align="center">
+               <audio controls="">
+                   <source src="files/Comparison-Methods/CVDE/GT/GT_51.wav" type="audio/mp3">
+                </audio>
+             </td>
+             <td align="center">
+               <audio controls="">
+                   <source src="files/Comparison-Methods/CVDE/GT/GT_19.wav" type="audio/mp3">
+                </audio>
+             </td>
+         </tr>
+           
+         <tr>
+            <td align="center">JT (Upper Bound)</td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/JT/JT_13.wav" type="audio/wav">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/JT/JT_51.wav" type="audio/mp3">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/JT/JT_19.wav" type="audio/mp3">
+               </audio>
+            </td>
+         </tr>
+   
+         <tr>
+            <td align="center">SA</td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/SA/SA_13.wav" type="audio/wav">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/SA/SA_51.wav" type="audio/mp3">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/SA/SA_19.wav" type="audio/mp3">
+               </audio>
+            </td>
+          </tr>
+         
+          <tr>
+            <td align="center">EWC</td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/EWC/EWC_13.wav" type="audio/wav">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/EWC/EWC_51.wav" type="audio/mp3">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/EWC/EWC_19.wav" type="audio/mp3">
+               </audio>
+            </td>
+          </tr>
+   
+          <tr>
+            <td align="center">ER (BS:10)</td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/ER/ER_13.wav" type="audio/wav">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/ER/ER_51.wav" type="audio/mp3">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/ER/ER_19.wav" type="audio/mp3">
+               </audio>
+            </td>
+          </tr>
+          
+          <tr>
+            <td align="center">ER-KD (BS:10)</td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/ER-KD/ERKD_13.wav" type="audio/wav">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/ER-KD/ERKD_51.wav" type="audio/mp3">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/Comparison-Methods/CVDE/ER-KD/ERKD_19.wav" type="audio/mp3">
+               </audio>
+            </td>
+          </tr>
+   
+      </table>
+
+
+      <div>
+         <a name="baseline_limit">
+            <h2 style="color: black;">Experience Replay - Buffer Replicate (ER-BR)</h2>
+         </a>
+      </div>
+      
+      <div style="color: blue;"><strong>ER-BR mainly improves pace of the synthesized speech and in some cases it also the audio quality. <br>
+                                          However it may also fail for difficult speakers (in the examples: the female speaker #51) since there is no similar speaker in dataset in terms of vocal characteristics.<br>
+                              </strong></div>
+      <!--
+         -------------------- ENGLISH
+      -->
+      <h3>-> CVDE</h2> 
+      <div></div>     
+      
+      <table  border="0">
+         <tr>
+             <td align="center">Speaker <strong>01</strong></td>
+             <td align="center">
+               <audio controls="">
+                   <source src="files/ER-BR/CVDE/01/GT_01.wav" type="audio/wav">
+                </audio>
+             </td>
+
+         </tr>
+      </table>
+      <br>
+      <table  border="0">
+         <tr>
+            <td align="center">Method</td>
+            <td align="center">Sentence 1</td>
+            <td align="center">Sentence 2</td>
+          </tr>
+          
+         <tr>
+             <td align="center">SA</td>
+             <td align="center">
+               <audio controls="">
+                   <source src="files/ER-BR/CVDE/01/SA_01_1.wav" type="audio/wav">
+                </audio>
+             </td>
+             <td align="center">
+               <audio controls="">
+                   <source src="files/ER-BR/CVDE/01/SA_01_2.wav" type="audio/mp3">
+                </audio>
+             </td>
+         </tr>
+
+         <tr>
+            <td align="center">ER (BS:1)</td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/ER-BR/CVDE/01/ER_01_1.wav" type="audio/wav">
+               </audio>
+            </td>
+            <td align="center">
+              <audio controls="">
+                  <source src="files/ER-BR/CVDE/01/ER_01_2.wav" type="audio/mp3">
+               </audio>
+            </td>
+        </tr>
+
+        <tr>
+         <td align="center">ER-BR (BS:1)</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/ER-BR/CVDE/01/ER-BR_01_1.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/ER-BR/CVDE/01/ER-BR_01_2.wav" type="audio/mp3">
+            </audio>
+         </td>
+         </tr>
+      </table>
+   <div>
+
+   </div>
+
+   <div>----------------------------------------</div>
+   <br>
+   <br>
+   <br>
+
+
+   <table  border="0">
+      <tr>
+          <td align="center">Speaker <strong>32</strong></td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/ER-BR/CVDE/32/GT_32.wav" type="audio/wav">
+             </audio>
+          </td>
+
+      </tr>
+   </table>
+   <br>
+   <table  border="0">
+      <tr>
+         <td align="center">Method</td>
+         <td align="center">Sentence 1</td>
+         <td align="center">Sentence 2</td>
+       </tr>
+       
+      <tr>
+          <td align="center">SA</td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/ER-BR/CVDE/32/SA_32_1.wav" type="audio/wav">
+             </audio>
+          </td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/ER-BR/CVDE/32/SA_32_2.wav" type="audio/mp3">
+             </audio>
+          </td>
+      </tr>
+
+      <tr>
+         <td align="center">ER (BS:1)</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/ER-BR/CVDE/32/ER_32_1.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/ER-BR/CVDE/32/ER_32_2.wav" type="audio/mp3">
+            </audio>
+         </td>
+     
+      <tr>
+      <td align="center">ER-BR (BS:1)</td>
+      <td align="center">
+        <audio controls="">
+            <source src="files/ER-BR/CVDE/32/ER-BR_32_1.wav" type="audio/wav">
+         </audio>
+      </td>
+      <td align="center">
+        <audio controls="">
+            <source src="files/ER-BR/CVDE/32/ER-BR_32_2.wav" type="audio/mp3">
+         </audio>
+      </td>
+      </tr>
+   </table>
+
+
+   <div>----------------------------------------</div>
+   <br>
+   <br>
+   <br>
+
+
+   <table  border="0">
+      <tr>
+          <td align="center">Speaker <strong>51</strong></td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/ER-BR/CVDE/51/GT_51.wav" type="audio/wav">
+             </audio>
+          </td>
+
+      </tr>
+   </table>
+   <br>
+   <table  border="0">
+      <tr>
+         <td align="center">Method</td>
+         <td align="center">Sentence 1</td>
+         <td align="center">Sentence 2</td>
+       </tr>
+       
+      <tr>
+          <td align="center">SA</td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/ER-BR/CVDE/51/SA_51_1.wav" type="audio/wav">
+             </audio>
+          </td>
+          <td align="center">
+            <audio controls="">
+                <source src="files/ER-BR/CVDE/51/SA_51_2.wav" type="audio/mp3">
+             </audio>
+          </td>
+      </tr>
+
+      <tr>
+         <td align="center">ER (BS:1)</td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/ER-BR/CVDE/51/ER_51_1.wav" type="audio/wav">
+            </audio>
+         </td>
+         <td align="center">
+           <audio controls="">
+               <source src="files/ER-BR/CVDE/51/ER_51_2.wav" type="audio/mp3">
+            </audio>
+         </td>
+     
+      <tr>
+      <td align="center">ER-BR (BS:1)</td>
+      <td align="center">
+        <audio controls="">
+            <source src="files/ER-BR/CVDE/51/ER-BR_51_1.wav" type="audio/wav">
+         </audio>
+      </td>
+      <td align="center">
+        <audio controls="">
+            <source src="files/ER-BR/CVDE/51/ER-BR_51_2.wav" type="audio/mp3">
+         </audio>
+      </td>
+      </tr>
+   </table>
+  
+</html>
