@@ -2,7 +2,7 @@
    <head>
       <meta charset="UTF-8">
       <title>Audio Samples</title>
-      
+      <link rel="stylesheet" href="assets/style.css">   
    </head>
    <h1 align="center">Continual Speaker Adapation for Text-to-Speech Synthesis</h1>
    <hr>
@@ -14,23 +14,27 @@
       </a>
    </div>
    
-   <div style="color: blue;"><strong>The results from all episode-based methods are synthesized in the last episode of the model trained on one of the random speaker sequences.</strong></div>
+   <div style="color: blue;"><strong>The results from all episode-based methods (gray rows) are synthesized in the last episode.</strong></div>
+   <img src="assets/figure.png" width="600" alt="Illustration">
+
    <!--
       -------------------- ENGLISH
    -->
-   <h3>-> VCTK</h2> 
+   <h3>-> Dataset: VCTK </h2> 
    <div></div>
 
    <br>
-   <table  border="0">
+
+
+   <table >
       <tr>
-         <td align="center">Method</td>
-         <td align="center">Random Previous Speaker (p226)</td>
-         <td align="center">Random Previous Speaker (p316)</td>
-         <td align="center">Random Previous Speaker (p284)</td>
+         <td align="center"><strong>Method</strong></td>
+         <td align="center">Random Speaker (p226)</td>
+         <td align="center">Random Speaker (p316)</td>
+         <td align="center">Random Speaker (p284)</td>
        </tr>
        
-      <tr>
+      <tr style="background-color: rgba(156, 181, 252, 0.904);">
           <td align="center">Dataset Sample</td>
           <td align="center">
             <audio controls="">
@@ -49,7 +53,7 @@
           </td>
       </tr>
         
-      <tr>
+      <tr style="background-color: rgb(111, 168, 111);">
          <td align="center">JT (Upper Bound)</td>
          <td align="center">
            <audio controls="">
@@ -68,8 +72,8 @@
          </td>
       </tr>
 
-      <tr>
-         <td align="center">SA</td>
+      <tr style="background-color: rgb(199, 199, 199);">
+         <td align="center">SA (Baseline)</td>
          <td align="center">
            <audio controls="">
                <source src="files/Comparison-Methods/VCTK/SA/SA_p226.wav" type="audio/wav">
@@ -87,7 +91,7 @@
          </td>
        </tr>
       
-       <tr>
+       <tr style="background-color: rgb(199, 199, 199);">
          <td align="center">EWC</td>
          <td align="center">
            <audio controls="">
@@ -106,7 +110,7 @@
          </td>
        </tr>
 
-       <tr>
+       <tr style="background-color: rgb(199, 199, 199);">
          <td align="center">ER (BS:10)</td>
          <td align="center">
            <audio controls="">
@@ -125,7 +129,7 @@
          </td>
        </tr>
        
-       <tr>
+       <tr style="background-color: rgb(199, 199, 199);">
          <td align="center">ER-KD (BS:10)</td>
          <td align="center">
            <audio controls="">
@@ -157,13 +161,13 @@
       <br>
       <table  border="0">
          <tr>
-            <td align="center">Method</td>
-            <td align="center">Random Previous Speaker (13)</td>
-            <td align="center">Random Previous Speaker (51) <br><strong>*the only female speaker in the dataset*</strong></td>
-            <td align="center">Random Previous Speaker (19)</td>
+            <td align="center"><strong>Method</strong></td>
+            <td align="center">Random Speaker (13)</td>
+            <td align="center">Random Speaker (51) <br>*the only female speaker in the dataset</td>
+            <td align="center">Random Speaker (19)</td>
           </tr>
           
-         <tr>
+         <tr style="background-color: rgba(156, 181, 252, 0.904);">
              <td align="center">Dataset Sample</td>
              <td align="center">
                <audio controls="">
@@ -182,7 +186,7 @@
              </td>
          </tr>
            
-         <tr>
+         <tr style="background-color: rgb(111, 168, 111);">
             <td align="center">JT (Upper Bound)</td>
             <td align="center">
               <audio controls="">
@@ -201,8 +205,8 @@
             </td>
          </tr>
    
-         <tr>
-            <td align="center">SA</td>
+         <tr style="background-color: rgb(199, 199, 199);">
+            <td align="center">SA (Baseline)</td>
             <td align="center">
               <audio controls="">
                   <source src="files/Comparison-Methods/CVDE/SA/SA_13.wav" type="audio/wav">
@@ -220,7 +224,7 @@
             </td>
           </tr>
          
-          <tr>
+          <tr style="background-color: rgb(199, 199, 199);">
             <td align="center">EWC</td>
             <td align="center">
               <audio controls="">
@@ -239,7 +243,7 @@
             </td>
           </tr>
    
-          <tr>
+          <tr style="background-color: rgb(199, 199, 199);">
             <td align="center">ER (BS:10)</td>
             <td align="center">
               <audio controls="">
@@ -258,7 +262,7 @@
             </td>
           </tr>
           
-          <tr>
+          <tr style="background-color: rgb(199, 199, 199);">
             <td align="center">ER-KD (BS:10)</td>
             <td align="center">
               <audio controls="">
@@ -278,8 +282,13 @@
           </tr>
    
       </table>
+      
 
 
+
+      <br>
+      <br>
+      <hr>
       <div>
          <a name="baseline_limit">
             <h2 style="color: black;">Experience Replay - Buffer Replicate (ER-BR)</h2>
@@ -292,12 +301,12 @@
       <!--
          -------------------- ENGLISH
       -->
-      <h3>-> CVDE</h2> 
+      <h4>Speaker: 01</h4> 
       <div></div>     
       
       <table  border="0">
-         <tr>
-             <td align="center">Speaker <strong>01</strong></td>
+         <tr style="background-color: rgba(156, 181, 252, 0.904);">
+             <td align="center">Dataset Sample</strong></td>
              <td align="center">
                <audio controls="">
                    <source src="files/ER-BR/CVDE/01/GT_01.wav" type="audio/wav">
@@ -360,15 +369,14 @@
 
    </div>
 
-   <div>----------------------------------------</div>
    <br>
    <br>
    <br>
-
+   <h4>Speaker: 32</h4> 
 
    <table  border="0">
-      <tr>
-          <td align="center">Speaker <strong>32</strong></td>
+      <tr style="background-color: rgba(156, 181, 252, 0.904);">
+          <td align="center">Dataset Sample</td>
           <td align="center">
             <audio controls="">
                 <source src="files/ER-BR/CVDE/32/GT_32.wav" type="audio/wav">
@@ -428,15 +436,14 @@
    </table>
 
 
-   <div>----------------------------------------</div>
    <br>
    <br>
    <br>
-
-
+   <h4>Speaker: 51</h4> 
+   * In this example ER-BR also fails to synthesize speech for the previous speaker and can only partially recover the vocal characteristics. 
    <table  border="0">
-      <tr>
-          <td align="center">Speaker <strong>51</strong></td>
+      <tr style="background-color: rgba(156, 181, 252, 0.904);">
+          <td align="center">Dataset Sample</td>
           <td align="center">
             <audio controls="">
                 <source src="files/ER-BR/CVDE/51/GT_51.wav" type="audio/wav">
